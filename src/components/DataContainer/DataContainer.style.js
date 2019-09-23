@@ -11,7 +11,7 @@ export let styles = () => ({
     height: '82%',
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'center',
+    justifyContent: 'space-around',
     margin: '0 15px'
   }
 });

@@ -3,7 +3,8 @@ import axios from 'axios';
 import { CircularProgress, withStyles } from "@material-ui/core";
 import { styles } from './DataContainer.style';
 import FullDataTable from "../FullDataTable/FullDataTable";
-import PeriodPicker from "../PeriodPicker";
+import PeriodPicker from "../PeriodPicker/PeriodPicker";
+import SpecificDataSelector from "../SpecificDataSelector/SpecificDataSelector";
 
 function formatTimeToDate(time) {
     return new Date(time.replace('16-03', '2019-03-16'));
