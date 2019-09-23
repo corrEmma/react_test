@@ -4,7 +4,6 @@ import { CircularProgress, withStyles } from "@material-ui/core";
 import { styles } from './DataContainer.style';
 import FullDataTable from "../FullDataTable/FullDataTable";
 import PeriodPicker from "../PeriodPicker";
-import { dates } from './../DateUtils';
 
 function formatTimeToDate(time) {
     return new Date(time.replace('16-03', '2019-03-16'));
@@ -16,11 +15,6 @@ function formatTimeToString(time) {
             second: 'numeric'});
 }
 
-function formatDateToString(date) {
-    return date.toLocaleDateString('fr-FR',
-        {  year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric',
-            second: 'numeric'});
-}
 
 class DataContainer extends Component {
 
