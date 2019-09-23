@@ -15,7 +15,7 @@ class PeriodPicker extends Component {
                 <InputLabel className={classes.picker_label}>Start Date : </InputLabel>
                 <DateTimePicker className={classes.picker} value={this.props.startDate} onChange={date => this.props.updatePeriodValues(date, true)}/>
                 <InputLabel className={classes.picker_label}>End Date : </InputLabel>
-                <DateTimePicker value={this.props.endDate} onChange={date => this.props.updatePeriodValues(date,false)}/>
+                <DateTimePicker className={classes.picker} value={this.props.endDate} onChange={date => this.props.updatePeriodValues(date,false)}/>
             </div>
         );
     }
