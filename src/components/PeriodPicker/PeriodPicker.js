@@ -18,6 +18,7 @@ class PeriodPicker extends Component {
                     value={this.props.startDate}
                     onChange={date => this.props.updatePeriodValues(date, true)}
                     disableClock
+                    disableCalendar
                     locale="en-US"
                     clearIcon={null}
                 />
@@ -27,6 +28,7 @@ class PeriodPicker extends Component {
                     value={this.props.endDate}
                     onChange={date => this.props.updatePeriodValues(date,false)}
                     disableClock
+                    disableCalendar
                     locale="en-US"
                     clearIcon={null}
                 />

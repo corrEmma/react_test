@@ -11,7 +11,7 @@ export default function FullDataTable(props) {
         print: false,
         download: false,
         search: false,
-        responsive: 'scrollFullHeight',
+        responsive: 'stacked',
         rowsPerPage: 15,
         rowsPerPageOptions: [15,30,50,100],
         selectableRows: 'none'

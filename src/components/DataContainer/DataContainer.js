@@ -122,10 +122,10 @@ class DataContainer extends Component {
                 resp.data.forEach(obj => {
                     obj.time = obj.time ? { date: formatTimeToDate(obj.time), dateStr: formatTimeToString(obj.time)} : null;
                 });
-                resp.data.sort((a, b) => { return a.time !== null && b.time !== null && a.time.date < b.time.date });
+                resp.data.sort((a, b) => { return a.time !== null && b.time !== null && a.time.date - b.time.date });
                 this.setState({
-                    endDate: resp.data[0].time.date,
-                    startDate: resp.data[resp.data.length-1].time.date,
+                    endDate: resp.data[resp.data.length-1].time.date,
+                    startDate: resp.data[0].time.date,
                 }, () => {
                     this.setState({jsonData: resp.data})
                 });

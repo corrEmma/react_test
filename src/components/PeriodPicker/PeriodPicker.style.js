@@ -5,7 +5,8 @@ export let styles = () => ({
         margin: 15
     },
     picker_label: {
-        margin: 5
+        margin: 5,
+        alignSelf: 'center'
     },
     picker: {
         zIndex: 1200
