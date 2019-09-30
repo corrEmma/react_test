@@ -8,10 +8,8 @@ export let styles = () => ({
     alignItems: 'center',
   },
   container: {
-    height: '82%',
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'space-around',
-    margin: '0 15px'
+    margin: 15
   }
 });

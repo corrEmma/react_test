@@ -13,9 +13,23 @@ class PeriodPicker extends Component {
         return (
             <div className={classes.period_picker}>
                 <InputLabel className={classes.picker_label}>Start Date : </InputLabel>
-                <DateTimePicker className={classes.picker} value={this.props.startDate} onChange={date => this.props.updatePeriodValues(date, true)}/>
+                <DateTimePicker
+                    className={classes.picker}
+                    value={this.props.startDate}
+                    onChange={date => this.props.updatePeriodValues(date, true)}
+                    disableClock
+                    locale="en-US"
+                    clearIcon={null}
+                />
                 <InputLabel className={classes.picker_label}>End Date : </InputLabel>
-                <DateTimePicker className={classes.picker} value={this.props.endDate} onChange={date => this.props.updatePeriodValues(date,false)}/>
+                <DateTimePicker
+                    className={classes.picker}
+                    value={this.props.endDate}
+                    onChange={date => this.props.updatePeriodValues(date,false)}
+                    disableClock
+                    locale="en-US"
+                    clearIcon={null}
+                />
             </div>
         );
     }
